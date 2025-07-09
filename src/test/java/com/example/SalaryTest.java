@@ -7,7 +7,7 @@ public class SalaryTest {
 
     @Test
     public void testBasicYearlySalary() {
-        Salary salary = new Salary(3000, 1200);
+        Salary salary = new Salary(3000, 1200); // monthly salary, bonus
         double expected = (3000 * 12) + 1200;
         assertEquals(expected, salary.calculateYearlySalary(), 0.01);
     }
